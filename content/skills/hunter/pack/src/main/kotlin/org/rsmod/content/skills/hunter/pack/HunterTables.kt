@@ -127,6 +127,25 @@ object HunterTables {
                 column(COL_CAUGHT_MAX, 1, 1, 10)
                 column(LocKeyed.COL_LOC_KEY, "polar")
             }
+
+            // Appended rather than slotted in at its level, so the index a sprung trap persists
+            // keeps pointing at the same creature.
+            row("dbrow.hunter_tropical_wagtail") {
+                columnRSCM(COL_NPC, "npc.multicoloured_bird")
+                column(COL_LEVEL, 19)
+                column(COL_XP, 952)
+                column(COL_SUCCESS_LOW, 75)
+                column(COL_SUCCESS_HIGH, 370)
+                columnRSCM(
+                    COL_CAUGHT_ITEMS,
+                    "obj.bones",
+                    "obj.spit_raw_bird_meat",
+                    "obj.hunting_stripy_bird_feather",
+                )
+                column(COL_CAUGHT_MIN, 1, 1, 5)
+                column(COL_CAUGHT_MAX, 1, 1, 10)
+                column(LocKeyed.COL_LOC_KEY, "coloured")
+            }
         }
 
     /**

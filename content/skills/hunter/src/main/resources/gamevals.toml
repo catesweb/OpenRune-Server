@@ -15,6 +15,7 @@ hunter_polar_bird = 56303
 hunter_chinchompa = 56304
 hunter_carnivorous_chinchompa = 56305
 hunter_black_chinchompa = 56306
+hunter_tropical_wagtail = 56307
 
 [gamevals.controller]
 hunter_trap = 2
